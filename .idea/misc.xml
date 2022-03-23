@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/drawable/d.xml" value="0.1195" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/drawable/itrm.xml" value="0.12" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/drawable/pager_dot.xml" value="0.137" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/drawable/pager_dot_s.xml" value="0.137" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/drawable/select_dot.xml" value="0.137" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/activity_show_all.xml" value="0.25416666666666665" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/activity_show_movies.xml" value="0.2" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/fragment_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/fragment_movies.xml" value="0.25416666666666665" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/fragment_search.xml" value="0.2" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/fragment_t_v.xml" value="0.25416666666666665" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/itrm.xml" value="0.25416666666666665" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/main_moves.xml" value="0.2" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/move.xml" value="0.25416666666666665" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/strem.xml" value="0.25416666666666665" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/layout/viewpager_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/files/flutter_code/MovieStreaming/app/src/main/res/menu/menu.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

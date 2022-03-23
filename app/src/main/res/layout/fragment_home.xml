@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_back"
+    tools:context=".Fragment.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@android:color/transparent"
+                app:tabBackground="@drawable/select_dot"
+                app:tabIndicatorHeight="0dp"
+                app:tabMaxWidth="15dp" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_sterm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            tools:listitem="@layout/strem"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintBottom_toTopOf="@+id/all_movies"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/all_movies"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="0dp"
+            tools:listitem="@layout/main_moves"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_sterm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back"
+    android:orientation="vertical"
+    tools:context=".Activity.Show_Movies">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_350sdp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:background="@drawable/d"
+                android:src="@drawable/h"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/add_to_list"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                app:cardCornerRadius="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:cardBackgroundColor="#04754D"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:elevation="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/poster"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poster">
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/play"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_50sdp"
+                app:cardBackgroundColor="#04754D"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/poster"
+                app:layout_constraintTop_toBottomOf="@+id/poster"
+                app:layout_constraintEnd_toStartOf="@+id/add_to_list">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/play"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/tt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/add_to_list"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_to_list" >
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="After We Fell"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25ssp"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"
+                />
+                <TextView
+                    android:id="@+id/imdb_re"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="7.5"
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:drawableEnd="@drawable/ic_baseline_star_24"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/all_de"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:text="After We Fell"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/tt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/plot"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:text="Massimo is a member of the Sicilian Mafia family and Laura is a sales director. She does not expect that on a trip to Sicily trying to save her relationship, Massimo will kidnap her and give her 365 days to fall in love with him."
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/all_de"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

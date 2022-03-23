@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.SearchFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.appcompat.widget.SearchView
+           android:id="@+id/text_search"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="@dimen/_10sdp"
+           android:background="@color/white"
+           android:padding="@dimen/_8sdp"
+           app:iconifiedByDefault="false"
+           app:queryHint="Movies Name..." />
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/search_list"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/text_search"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentBottom="true"
+           android:padding="@dimen/_5sdp"
+           tools:listitem="@layout/move" />
+
+   </RelativeLayout>
+</FrameLayout>

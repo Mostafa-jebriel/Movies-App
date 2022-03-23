@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="action"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/show_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="See All"
+            android:textAlignment="center"
+            android:textColor="#E91E63"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_move"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        tools:listitem="@layout/move"/>
+</LinearLayout>
